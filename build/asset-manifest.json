@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a9831fc.css",
+    "main.js": "/static/js/main.b0daf835.js",
+    "static/media/cameras.jpg": "/static/media/cameras.7bd9a63278463ac25046.jpg",
+    "static/media/film-strips-cassettes-near-cameras.jpg": "/static/media/film-strips-cassettes-near-cameras.915938add52fc968d650.jpg",
+    "static/media/camerascassettes.jpg": "/static/media/camerascassettes.953c4f9d0a95f56d17d8.jpg",
+    "static/media/LogoBestPhoto.png": "/static/media/LogoBestPhoto.c4862b29472645b436c1.png",
+    "index.html": "/index.html",
+    "main.2a9831fc.css.map": "/static/css/main.2a9831fc.css.map",
+    "main.b0daf835.js.map": "/static/js/main.b0daf835.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a9831fc.css",
+    "static/js/main.b0daf835.js"
+  ]
+}
