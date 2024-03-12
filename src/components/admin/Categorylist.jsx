@@ -32,7 +32,7 @@ const closepopup = () => {
     )
   }
   const createCategory = async (value) => {
-    await axios.post("http://localhost:3000/api/category", value)
+    await axios.post("https://dark-erin-gharial-ring.cyclic.app/api/category", value)
 }
 
   const [currentPage, setCurrentPage] = useState(1)
@@ -50,7 +50,7 @@ const closepopup = () => {
     }, []);
 
     const loadData = async () => {
-        await axios.get("http://localhost:3000/api/category")
+        await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/category")
         .then(res => {
             // console.log(res.data)
             setCategory(res.data)
@@ -62,7 +62,7 @@ const closepopup = () => {
     const handleRemove = async (id) => {
         try {
             if(window.confirm("คุณต้องการลบรายการนี้ใช่หรือไม่?")) {
-        await axios.delete(`http://localhost:3000/api/category/${id}`)
+        await axios.delete(`https://dark-erin-gharial-ring.cyclic.app/api/category/${id}`)
           .then((res) => {
             loadData()
         toast.success("ลบรายการสำเร็จ")
