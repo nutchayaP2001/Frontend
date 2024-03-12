@@ -36,7 +36,7 @@ const FormEditCategory = () => {
     },[]);
 
     const getData = async (id) => {
-        await axios.get(`http://localhost:3000/api/category/${id}`)
+        await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/category/${id}`)
         // getCategoryById(id)
         .then((res) => {
            setCatname(res.data.CatName)
@@ -49,7 +49,7 @@ const FormEditCategory = () => {
 
 
     const EditCategory = async (id,value) => {
-     await axios.patch(`http://localhost:3000/api/category/`+id,value)
+     await axios.patch(`https://dark-erin-gharial-ring.cyclic.app/api/category/`+id,value)
 
     }
     const handleSubmit = (e) => {
@@ -71,7 +71,7 @@ const FormEditCategory = () => {
   }, []);
 
   const loadData = async () => {
-      await axios.get("http://localhost:3000/api/category")
+      await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/category")
       .then(res => {
           setCategory(res.data)
       })
