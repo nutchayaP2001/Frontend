@@ -55,7 +55,7 @@ const BarGraphSale = () => {
     ]
     });
  useEffect(() => {
-        const url = `http://localhost:3000/api/orders`
+        const url = `https://dark-erin-gharial-ring.cyclic.app/api/orders`
      fetch(url, {
           method: 'GET'
         })
