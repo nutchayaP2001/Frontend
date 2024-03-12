@@ -13,7 +13,7 @@ const initialState = {
 // Login Admin
 export const LoginUser = createAsyncThunk("user/LoginUser", async(user, thunkAPI) => {
     try {
-        const response = await axios.post('http://localhost:3000/api/login', {
+        const response = await axios.post('https://dark-erin-gharial-ring.cyclic.app/api/login', {
             userEmail: user.userEmail,
             userPass: user.userPass
         });
@@ -28,7 +28,7 @@ export const LoginUser = createAsyncThunk("user/LoginUser", async(user, thunkAPI
 
 export const getMe = createAsyncThunk("user/getMe", async(_, thunkAPI) => {
     try {
-        const response = await axios.get('http://localhost:3000/api/me');
+        const response = await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/me');
         // console.log(response.data)
         return response.data;
         
@@ -44,7 +44,7 @@ export const getMe = createAsyncThunk("user/getMe", async(_, thunkAPI) => {
 // Login Customer
 export const LoginCus = createAsyncThunk("cus/LoginCus", async(cus, thunkAPI) => {
     try {
-        const response = await axios.post('http://localhost:3000/api/logincus', {
+        const response = await axios.post('https://dark-erin-gharial-ring.cyclic.app/api/logincus', {
             CusUsername: cus.CusUsername,
             CusPass: cus.CusPass
         });
@@ -59,7 +59,7 @@ export const LoginCus = createAsyncThunk("cus/LoginCus", async(cus, thunkAPI) =>
 
 export const getMeCustomer = createAsyncThunk("cus/getMeCustomer", async(_, thunkAPI) => {
     try {
-        const response = await axios.get('http://localhost:3000/api/mecustomer');
+        const response = await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/mecustomer');
         return response.data;
     } catch (error) {
         if(error.response) {
@@ -70,7 +70,7 @@ export const getMeCustomer = createAsyncThunk("cus/getMeCustomer", async(_, thun
 });
 
 export const LogOut = createAsyncThunk("user/LogOut", async() => {
-       await axios.delete('http://localhost:3000/api/logout');
+       await axios.delete('https://dark-erin-gharial-ring.cyclic.app/api/logout');
 });
 
 export const authSlice = createSlice({
