@@ -38,7 +38,7 @@ const FormAddProduct = () => {
 
   const loadData = async () => {
     await axios
-      .get("http://localhost:3000/api/category")
+      .get("https://dark-erin-gharial-ring.cyclic.app/api/category")
       .then((res) => {
         setValues({ ...values, category: res.data });
 
@@ -72,7 +72,7 @@ const FormAddProduct = () => {
       formData.append("ProImage", ProImage);
       formData.append("categoryId", categoryId);
     try {
-      await axios.post("http://localhost:3000/api/products",formData,{
+      await axios.post("https://dark-erin-gharial-ring.cyclic.app/api/products",formData,{
         headers: {
           "Content-type": "multipart/form-data",
         }
