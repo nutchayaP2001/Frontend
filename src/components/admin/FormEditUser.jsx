@@ -35,7 +35,7 @@ const FormEditUser = () => {
   }, []);
 
   const getUsers = async () => {
-    const response = await axios.get("http://localhost:3000/api/users");
+    const response = await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/users");
     setUsers(response.data);
   };
 
@@ -43,7 +43,7 @@ const FormEditUser = () => {
   useEffect(()=>{
     const getUserById = async () => {
      try {
-       const response = await axios.get(`http://localhost:3000/api/users/${id}`);
+       const response = await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/users/${id}`);
      setUserfname(response.data.userFname);
      setUserlname(response.data.userLname);
      setUseremail(response.data.userEmail);
@@ -68,7 +68,7 @@ const FormEditUser = () => {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:3000/api/users/${id}`, {
+      await axios.patch(`https://dark-erin-gharial-ring.cyclic.app/api/users/${id}`, {
         userFname: userFname,
         userLname: userLname,
         userEmail: userEmail,
