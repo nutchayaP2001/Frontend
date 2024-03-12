@@ -50,7 +50,7 @@ const [query, setQuery] = useState("")
   }, []);
 
   const getUsers = async () => {
-    const response = await axios.get("http://localhost:3000/api/users");
+    const response = await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/users");
     console.log(response.data)
     setUsers(response.data);
     setSelectData(response.data)
@@ -63,7 +63,7 @@ const [query, setQuery] = useState("")
     const deleteUser = async (userId) => {
         try {
           if(window.confirm(`คุณต้องการลบรายการนี้ใช่หรือไม่?`)){
-            await axios.delete(`http://localhost:3000/api/users/${userId}`)
+            await axios.delete(`https://dark-erin-gharial-ring.cyclic.app/api/users/${userId}`)
           .then((res)=> {
           getUsers()
             toast.success("ลบรายการสำเร็จ")
