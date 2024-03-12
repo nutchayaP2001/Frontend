@@ -30,7 +30,7 @@ const closepopup = () => {
 }
 
 const EditCategory = async (id,value) => {
-    await axios.patch(`http://localhost:3000/api/category/`+id,value)
+    await axios.patch(`https://dark-erin-gharial-ring.cyclic.app/api/category/`+id,value)
    
    }
 const handleSubmit = (e) => {
