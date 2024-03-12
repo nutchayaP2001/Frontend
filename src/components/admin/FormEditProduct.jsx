@@ -50,7 +50,7 @@ function FormEditProduct() {
 useEffect(() => {
     const loadData = async () => {
         try {
-            const response = await axios.get(`http://localhost:3000/api/product/${id}`);
+            const response = await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/product/${id}`);
             setCategoryId(response.data.categoryId)
             setProname(response.data.ProName)
             setProdes(response.data.ProDes)
@@ -66,7 +66,7 @@ useEffect(() => {
               }
         }
             // เรียก List Category
-    await axios.get('http://localhost:3000/api/category')
+    await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/category')
     .then((res) => {
        setCategory(res.data)
     })
@@ -125,7 +125,7 @@ const saveProduct = async () => {
     formData.append("ProImage", ProImage);
     formData.append("categoryId", categoryId);
     try {
-        await axios.patch(`http://localhost:3000/api/products/${id}`, formData, {
+        await axios.patch(`https://dark-erin-gharial-ring.cyclic.app/api/products/${id}`, formData, {
             headers: {
                 "Content-type": "multipart/form-data",
             }
