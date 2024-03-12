@@ -79,7 +79,7 @@ const FormAddUser = () => {
 
 
   const createUser = async (data) => {
-    await axios.post('http://localhost:3000/api/users',data)
+    await axios.post('https://dark-erin-gharial-ring.cyclic.app/api/users',data)
 
   }
 
@@ -107,7 +107,7 @@ const FormAddUser = () => {
   }, []);
 
   const getlistProvince = async () => {
-    await axios.get('http://localhost:3000/api/province')
+    await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/province')
     .then(res => {
       setUserprovince(res.data)
     // console.log(res.data)
@@ -117,7 +117,7 @@ const FormAddUser = () => {
   }
  
   const getlistDistrict = async (code) => {
-   await axios.get(`http://localhost:3000/api/district/${code}`)
+   await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/district/${code}`)
    .then(res => {
     setUserdistrict(res.data)
     // console.log(res.data)
@@ -127,7 +127,7 @@ const FormAddUser = () => {
   }
 
   const getlistSubdistrict = async (code) => {
-   await axios.get(`http://localhost:3000/api/subdistrict/${code}`)
+   await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/subdistrict/${code}`)
    .then(res => {
     setUserplace(res.data)
     // console.log(res.data)
