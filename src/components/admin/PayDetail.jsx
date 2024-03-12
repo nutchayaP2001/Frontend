@@ -30,7 +30,7 @@ const PayDetail = () => {
   useEffect(()=> {
     const getPaymentById = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/payments/${id}`)
+        const response = await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/payments/${id}`)
         setPayStatus(response.data.payment_status)
         setBank(response.data.bank)
         setDatePay(response.data.date_pay)
@@ -56,7 +56,7 @@ const PayDetail = () => {
   const updateStatus = async(e) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:3000/api/paymentstatus/${id}`,{
+      await axios.patch(`https://dark-erin-gharial-ring.cyclic.app/api/paymentstatus/${id}`,{
         payment_status: payment_status
       })
       .then((res) => {
