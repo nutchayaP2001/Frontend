@@ -19,7 +19,7 @@ useEffect(() => {
 },[])
 
 const loadData = async () => {
- const response = await axios.get(`http://localhost:3000/api/cart`,)
+ const response = await axios.get(`/api/cart`,)
   // .then((res) => {
     setdataCartItems(response.data)
     console.log(response.data)

@@ -60,7 +60,7 @@
     margin-top: 5px;
     margin-right: 20px;
     /* left: 0; */
-    /* width: 35%; */
+    width: 35%;
 }
 .inp-search{
    padding: 8px;
@@ -1714,6 +1714,8 @@ color: #010042;
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.30) 0px 2px 7px;
+    /* width: 100vw; */
+
 }
 .flex-order{
     display: flex;
@@ -1726,6 +1728,7 @@ color: #010042;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.30) 0px 2px 7px;
     margin-top: 15px;
+    /* width: fit-content; */
 }
 .text-header{
    margin-top: auto;
@@ -1760,12 +1763,12 @@ color: #010042;
     margin-left: 1rem;
     
 }
-.text-width{
+/* .text-width{
     width: max-content;
-}
+} */
 .flex-orderdetail{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .text-detail{
     margin-left: 1rem;
@@ -2534,7 +2537,7 @@ color: #010042;
 @media (max-width: 1024px) { 
     .form-content{
         width: 500px;
-        height: 450px;
+        height: 420px;
     }
 
     .label-inp{
@@ -2585,6 +2588,7 @@ color: #010042;
         width: 100%;
     }
     
+    
 }
 
 /* Mobile */
@@ -2594,7 +2598,7 @@ color: #010042;
     } */
     .form-content{
         width: 300px;
-        height: 320px;
+        height: 340px;
     }
     .label-inp{
         font-size: 14px;
@@ -2667,6 +2671,40 @@ color: #010042;
     .input-group-sale{
         margin-left: 0;
     }
+    table .breaktable {
+        border: 1px solid #ddd;
+      }
+    .breaktable th, td{
+        padding: 5px;
+        display: block;
+        text-align: center;
+
+    }
+      th.hide-on-small {
+        display: none;
+      }
+      
+      .text-detail{
+        margin-left: 1rem;
+        margin-top: auto;
+        margin-bottom: auto;
+        line-height: 2rem;
+    }
+    .text-detail-order{
+        /* margin-left: 10rem; */
+        margin-top: auto;
+        margin-bottom: auto;
+        line-height: 2rem;
+    
+    }
+    .text-price-detail{
+        /* margin-left: 10rem; */
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        line-height: 2rem;
+    
+    }
+    
 }
 
 

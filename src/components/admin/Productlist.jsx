@@ -47,7 +47,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber)
   const loadData = async () => {
     setLoading(true);
     await axios
-      .get(`http://localhost:3000/api/products`)
+      .get(`/api/products`)
       .then((res) => {
         setLoading(false);
         //  console.log(res.data)

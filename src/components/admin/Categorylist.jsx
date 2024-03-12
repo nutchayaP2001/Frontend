@@ -32,7 +32,7 @@ const closepopup = () => {
     )
   }
   const createCategory = async (value) => {
-    await axios.post("https://bestphotodigital.com/api/category", value)
+    await axios.post("http://localhost:3000/api/category", value)
 }
 
   const [currentPage, setCurrentPage] = useState(1)

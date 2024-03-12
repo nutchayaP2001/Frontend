@@ -14,7 +14,7 @@ const TableUser = ({selectData,deleteUser}) => {
           ): (
 
           
-        <table className="table-style tableUser">
+        <table className="table-style tableUser  breaktable">
         
         <thead className="has-text-centered">
           <tr>

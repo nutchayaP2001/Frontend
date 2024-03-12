@@ -6,7 +6,7 @@ const TableOrders = ({orders}) => {
   return (
     <div>
       <div className="container">
-        <table className="table-style tableUser">
+        <table className="table-style tableUser breaktable">
         
         <thead className="has-text-centered">
           <tr>

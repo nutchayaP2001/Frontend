@@ -64,7 +64,7 @@ EditCategory(param.id, {CatName})
         >
         </TablePagination>
          */}
-        <table className="table-style tMargin">
+        <table className="table-style tMargin breaktable">
     
     <thead className="has-text-centered">
    

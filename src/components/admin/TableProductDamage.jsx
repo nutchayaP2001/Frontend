@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const TableProductDamage = ({damage}) => {
   return (
     <div>
-          <table className='table-style tableUser'>
+          <table className='table-style tableUser breaktable'>
         <thead className="has-text-centered">
           <tr>
             <th className='text-color'>ลำดับ</th>

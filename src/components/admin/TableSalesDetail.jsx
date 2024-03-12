@@ -59,10 +59,10 @@ const filteredProducts = Object.values(groupedProduct)
       ) : (
         <div className="container">
           <ExportExcel items={filteredProducts}/>
-          <table className="table-style tableUser">
+          <table className="table-style tableUser breaktable">
             <thead className="has-text-centered">
               <tr>
-              <th>ลำดับ</th>
+              <th className="hide-on-small">ลำดับ</th>
             <th>เลขที่การขาย</th>
             <th>วันที่</th>
             <th>รายการสินค้า</th>

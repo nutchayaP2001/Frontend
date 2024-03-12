@@ -112,6 +112,7 @@ background-color: #010042;
         overflow: auto;
         transform: translateX(-100%);
         transition: all 400ms ease-in-out;
+        z-index: 1;
     }
     .wrapper .navigation.active{
         transform: translateX(0);

@@ -1,9 +1,9 @@
 import axios from "axios";
 
 export const userCart = async (cart) => {
-  await axios.post("http://localhost:3000/api/users/carts", { cart });
+  await axios.post("/api/users/carts", { cart });
 };
 
 export const getUserCart = async () => {
-  await axios.get("http://localhost:3000/api/users/carts");
+  await axios.get("/api/users/carts");
 };
