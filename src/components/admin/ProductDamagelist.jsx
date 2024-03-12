@@ -16,7 +16,7 @@ const ProductDamagelist = () => {
   },[])
 
   const loadData = async () => {
-    await axios.get('http://localhost:3000/api/productdamages')
+    await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/productdamages')
     .then((res) => {
       setDamage(res.data)
       setSelectData(res.data)
