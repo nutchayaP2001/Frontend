@@ -70,7 +70,7 @@ const ProductTableInSale = ({ item, productId, ProQuantity, product,increaseSale
     try {
       
       if(window.confirm("บันทึกรายการสินค้า")){
-        await axios.post('http://localhost:3000/api/cart', {salesNo,cartItems})
+        await axios.post('https://dark-erin-gharial-ring.cyclic.app/api/cart', {salesNo,cartItems})
         dispatch(postCartToDatabase(salesNo,cartItems));
         toast.success("บันทึกรายการสำเร็จ");
         navigate("/checkout");
