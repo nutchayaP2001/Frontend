@@ -34,7 +34,7 @@ setPreview(URL.createObjectURL(image))
   useEffect(() => {
     const getOrdersById = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/orders/${id}`)
+        const response = await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/orders/${id}`)
         setOrderStatus(response.data.order_status);
         setProimage(response.data.product.ProImage)
         setProname(response.data.product.ProName)
@@ -66,7 +66,7 @@ setPreview(URL.createObjectURL(image))
   const updateOrderStatus = async (e) => {
 e.preventDefault();
 try {
-  await axios.patch(`http://localhost:3000/api/orderstatus/${id}`,{
+  await axios.patch(`https://dark-erin-gharial-ring.cyclic.app/api/orderstatus/${id}`,{
     order_status : order_status
   })
   .then((res) => {
