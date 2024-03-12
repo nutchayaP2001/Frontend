@@ -24,7 +24,7 @@ const closepopup = () => {
 },[]);
 
 const getData = async (id) => {
-    await axios.get(`http://localhost:3000/api/category/${id}`)
+    await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/category/${id}`)
     // getCategoryById(id)
     .then((res) => {
        setCatname(res.data.CatName)
@@ -37,7 +37,7 @@ const getData = async (id) => {
 
 
 const EditCategory = async (id,value) => {
- await axios.patch(`http://localhost:3000/api/category/`+id,value)
+ await axios.patch(`https://dark-erin-gharial-ring.cyclic.app/api/category/`+id,value)
 
 }
 const handleSubmit = (e) => {
@@ -59,7 +59,7 @@ useEffect(() => {
 }, []);
 
 const loadData = async () => {
-  await axios.get("http://localhost:3000/api/category")
+  await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/category")
   .then(res => {
       setCategories(res.data)
   })
@@ -70,7 +70,7 @@ const loadData = async () => {
 const handleRemove = async (id) => {
     try {
         if(window.confirm("คุณต้องการลบรายการนี้ใช่หรือไม่?")) {
-    await axios.delete(`http://localhost:3000/api/category/${id}`)
+    await axios.delete(`https://dark-erin-gharial-ring.cyclic.app/api/category/${id}`)
       .then((res) => {
         loadData()
     toast.success("การลบรายการสำเร็จ")
