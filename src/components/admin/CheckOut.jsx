@@ -19,7 +19,7 @@ useEffect(() => {
 },[])
 
 const loadData = async () => {
- const response = await axios.get(`/api/cart`,)
+ const response = await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/cart`,)
   // .then((res) => {
     setdataCartItems(response.data)
     console.log(response.data)
