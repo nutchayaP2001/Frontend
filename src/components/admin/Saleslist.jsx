@@ -25,20 +25,20 @@ const Saleslist = () => {
   }, []);
 
   const getUsers = async () => {
-    const response = await axios.get("http://localhost:3000/api/users");
+    const response = await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/users");
     // console.log(response.data)
     setUsers(response.data);
   
   };
 
   const loadData = async () => {
-    const response = await axios.get('http://localhost:3000/api/cart')
+    const response = await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/cart')
        setDataCartItems(response.data)
       //  console.log(response.data)
    };
 
    const loadDataOrder = async () => {
-    const response = await axios.get('http://localhost:3000/api/orders')
+    const response = await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/orders')
        setDataOrder(response.data)
       //  console.log(response.data)
    };
