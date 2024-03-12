@@ -27,7 +27,7 @@ const ProductDamageDetail = () => {
     const getDamageById = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/productdamages/${id}`
+          `https://dark-erin-gharial-ring.cyclic.app/api/productdamages/${id}`
         );
         setStatus(response.data.status);
         setPickupProduct(response.data.date_pickupProduct);
@@ -52,7 +52,7 @@ const ProductDamageDetail = () => {
     e.preventDefault();
     try {
       await axios
-        .patch(`http://localhost:3000/api/productdamages/${id}`, {
+        .patch(`https://dark-erin-gharial-ring.cyclic.app/api/productdamages/${id}`, {
           status: status,
           admin_note: admin_note,
         })
