@@ -18,7 +18,7 @@ const Paylist = () => {
   },[])
 
   const loadPayment = async () => {
-    await axios.get('http://localhost:3000/api/payments')
+    await axios.get('https://dark-erin-gharial-ring.cyclic.app/api/payments')
     .then((res) => {
       setPayment(res.data)
       setSelectData(res.data)
