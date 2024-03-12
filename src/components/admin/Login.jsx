@@ -50,7 +50,6 @@ const Login = () => {
               </div> */}
               
               <div className="form-content">
-                <h2>Hiii</h2>
               <div className="img">
                 <img src={Logo} alt="" width={100} />
 {/* <h3 className="text-color has-text-centered text-size mb-5">
