@@ -61,7 +61,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber)
   const loadData = async () => {
     setLoading(true);
     await axios
-      .get('http://localhost:3000/api/productsale')
+      .get('https://dark-erin-gharial-ring.cyclic.app/api/productsale')
       .then((res) => {
         //  console.log(res.data)
         setProduct(res.data);
