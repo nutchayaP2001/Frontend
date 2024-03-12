@@ -47,7 +47,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber)
   const loadData = async () => {
     setLoading(true);
     await axios
-      .get(`/api/products`)
+      .get(`https://dark-erin-gharial-ring.cyclic.app/api/products`)
       .then((res) => {
         setLoading(false);
         //  console.log(res.data)
@@ -66,7 +66,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber)
   const handleRemove = async(id)=> {
     try {
       if(window.confirm("คุณต้องการลบรายการนี้ใช่หรือไม่ ?")){
-        await axios.delete(`http://localhost:3000/api/products/${id}`)
+        await axios.delete(`https://dark-erin-gharial-ring.cyclic.app/api/products/${id}`)
         .then(res=> {
           loadData(100)
           toast.success("การลบรายการสำเร็จ")
