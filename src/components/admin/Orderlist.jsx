@@ -19,7 +19,7 @@ const Orderlist = () => {
   }, []);
 
   const getProducts = async () => {
-    const response = await axios.get("http://localhost:3000/api/products");
+    const response = await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/products");
     setProducts(response.data);
     // console.log(response.data);
   };
@@ -29,7 +29,7 @@ const Orderlist = () => {
   }, [])
 
   const getOrders = async () => {
-    await axios.get("http://localhost:3000/api/orders")
+    await axios.get("https://dark-erin-gharial-ring.cyclic.app/api/orders")
     .then(res => {
       setOrders(res.data)
       setSelectData(res.data)
