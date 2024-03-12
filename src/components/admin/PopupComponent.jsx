@@ -26,7 +26,7 @@ const PopupComponent = ({id, onClose}) => {
     useEffect(() => {
         const getCartItemsById = async () => {
             try {
-                const response = await axios.get(`/api/cart/${id}`)
+                const response = await axios.get(`https://dark-erin-gharial-ring.cyclic.app/api/cart/${id}`)
                 setData(response.data)
                 // setProductData(response.data.product.ProName)
                 console.log(response.data)
